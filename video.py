@@ -44,7 +44,7 @@ if __name__ == "__main__":
         combine_frame = ori_frame * mask
         combine_frame = combine_frame.astype(np.uint8)
 
-        # cv2.imwrite(f"video/{idx}.png", combine_frame)
-        # idx += 1
+        cv2.imwrite(f"video/{idx}.png", combine_frame)
+        idx += 1
 
         out.write(combine_frame)
